@@ -12,7 +12,7 @@ public class HomePage extends JFrame implements ComponentListener, ChangeListene
 	public static final int AUTHORS_COUNT = 1;
 	public static final int AVERAGE_PRICE = 2;
 
-	private String imgaddress = "/home/yassh/Pictures/book-logo.jpg"; // Path to logo
+	private String imgaddress = "/home/yassh/Desktop/SKY-Labs/book-logo-png-5.png"; // Path to logo
 	private Vector registeredListeners = new Vector();
 	private JPanel topPanel = new JPanel(new BorderLayout());
 	private JPanel titlePanel = new JPanel(new GridLayout(2, 1));
@@ -42,7 +42,7 @@ public class HomePage extends JFrame implements ComponentListener, ChangeListene
 
 		ImageIcon imageIcon = new ImageIcon(this.imgaddress); // load the image to a imageIcon
 		Image image = imageIcon.getImage(); // transform it 
-		Image newimg = image.getScaledInstance(120, 70,  java.awt.Image.SCALE_SMOOTH); // scale it the smooth way  
+		Image newimg = image.getScaledInstance(105, 100,  java.awt.Image.SCALE_SMOOTH); // scale it the smooth way  
 		imageIcon = new ImageIcon(newimg);  // transform it back
 
 		pictureLabel.setIcon(imageIcon);
