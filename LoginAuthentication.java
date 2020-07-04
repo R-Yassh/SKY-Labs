@@ -5,8 +5,8 @@ import java.sql.*;
 public class LoginAuthentication implements ActionListener 
 {
     private String jdbcUrl = "jdbc:mysql://localhost:3306/booklist";
-    private String username = "root";
-    private String password = "***REMOVED***";
+    private String username = "username";
+    private String password = "password";
 
     private Connection conn=null;
 	private Statement stmt=null;
