@@ -13,6 +13,7 @@ public class HomeWelcomePanel extends JPanel implements ChangeListener
 	private JLabel totalActiveLabel = new JLabel();
 	private JPanel statsPanel = new JPanel();
 	private JPanel centerPanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 10, 5));
+	private DBConnection database = new DBConnection();
 
 	public HomeWelcomePanel(HomePage home)
 	{
@@ -37,15 +38,13 @@ public class HomeWelcomePanel extends JPanel implements ChangeListener
 
 	public void stateChanged(ChangeEvent ev){}
 
-	//update stats
+	//fetches latest stats from database
 	private void updateStats()
 	{
-		// TODO receive new statistics
-		// int books = (int)homePage.getStatistics(HomePage.BOOKS_COUNT);
-		// int users = (int)homePage.getStatistics(HomePage.AUTHORS_COUNT);
-		// double avgPrice = Math.floor(homePage.getStatistics(HomePage.AVERAGE_PRICE) * 10 + 0.5) / 10;
-
-		int books = 0, users = 0, txn = 0;
+		int books =  database.countBooks(); 
+		int users = database.countUsers();
+		int txn = database.countTxn();
+		
 		booksLabel.setText("Total number of books: " + String.valueOf(books));
 		usersLabel.setText("Total number of users: " + String.valueOf(users));
 		totalActiveLabel.setText("Total number of active transactions: " + String.valueOf(txn));
