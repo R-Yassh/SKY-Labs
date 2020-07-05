@@ -6,7 +6,7 @@ public class DBConnection implements ActionListener
 {
     private String jdbcUrl = "jdbc:mysql://localhost:3306/skyDB";
     private String username = "root";
-    private String password = "***REMOVED***";
+    private String password = "gotchaM87*";
 
     private Connection conn=null;
 	private Statement stmt=null;
