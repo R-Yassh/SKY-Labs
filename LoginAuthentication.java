@@ -4,7 +4,7 @@ import java.sql.*;
 // Class to connect with skyDB for authenticating login
 public class LoginAuthentication implements ActionListener 
 {
-    private String jdbcUrl = "jdbc:mysql://localhost:3306/booklist";
+    private String jdbcUrl = "jdbc:mysql://localhost:3306/skyDB";
     private String username = "username";
     private String password = "password";
 
