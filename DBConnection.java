@@ -5,8 +5,8 @@ import java.sql.*;
 public class DBConnection implements ActionListener 
 {
     private String jdbcUrl = "jdbc:mysql://localhost:3306/skyDB";
-    private String username = "root";
-    private String password = "gotchaM87*";
+    private String username = "username";
+    private String password = "password";
 
     private Connection conn=null;
 	private Statement stmt=null;
