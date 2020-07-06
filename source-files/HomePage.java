@@ -12,7 +12,7 @@ public class HomePage extends JFrame implements ComponentListener, ChangeListene
 	public static final int AUTHORS_COUNT = 1;
 	public static final int AVERAGE_PRICE = 2;
 
-	private String imgaddress = "./book-logo-png-5.png"; // Path to logo
+	private String imgaddress = "/home/yassh/Desktop/SKY-Labs/book-logo-png-5.png"; // Path to logo
 	private Vector registeredListeners = new Vector();
 	private JPanel topPanel = new JPanel(new BorderLayout());
 	private JPanel titlePanel = new JPanel(new GridLayout(2, 1));
